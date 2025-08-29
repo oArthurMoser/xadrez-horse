@@ -60,7 +60,15 @@ def imprimir_tabuleiro(tabuleiro):
 
 
 if __name__ == "__main__":
-    # TODO: Get coordinates from user
-    tabuleiro = passeio_do_cavalo(0, 0)  # começa no canto superior esquerdo
-    if tabuleiro:
-        imprimir_tabuleiro(tabuleiro)
+    try:
+        x = int(input("Digite a coordenada X inicial (0 a 7): "))
+        y = int(input("Digite a coordenada Y inicial (0 a 7): "))
+
+        if not (0 <= x < N and 0 <= y < N):
+            print("Coordenadas inválidas! Digite valores entre 0 e 7.")
+        else:
+            tabuleiro = passeio_do_cavalo(x, y)
+            if tabuleiro:
+                imprimir_tabuleiro(tabuleiro)
+    except ValueError:
+        print("Entrada inválida! Digite números inteiros.")
