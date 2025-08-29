@@ -1,4 +1,5 @@
 # Passeio do Cavalo - Usando Regra de Warnsdorff
+# Link: https://www.quora.com/How-does-the-Warnsdorffs-algorithm-work
 
 N = 8  # tamanho do tabuleiro (8x8)
 
