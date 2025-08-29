@@ -60,6 +60,7 @@ def imprimir_tabuleiro(tabuleiro):
 
 
 if __name__ == "__main__":
+    # TODO: Get coordinates from user
     tabuleiro = passeio_do_cavalo(0, 0)  # começa no canto superior esquerdo
     if tabuleiro:
         imprimir_tabuleiro(tabuleiro)
