@@ -1,4 +1,4 @@
-# Knight’s Tour
+# Xadrez-horse
 
 O problema pode ser resolvido com busca exaustiva (backtracking), ou seja, com um algoritmo guloso.
 
