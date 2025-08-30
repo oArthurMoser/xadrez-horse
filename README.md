@@ -1,4 +1,4 @@
-# Xadrez-horse
+# Xadrez Horse 🐎
 
 O problema pode ser resolvido com busca exaustiva (backtracking), ou seja, com um algoritmo guloso.
 
