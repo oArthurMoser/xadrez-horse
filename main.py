@@ -79,5 +79,8 @@ if __name__ == "__main__":
       print("Invalid coordinates! Please enter values between 1 and 8.")
     else:
       knights_tour(x, y)
+
+    input("\nPress Enter to exit...")
   except ValueError:
     print("Invalid input! Please enter integers.")
+    input("\nPress Enter to exit...")
