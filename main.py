@@ -27,13 +27,13 @@ def count_moves(x, y, board):
 
 # Find the next move using Warnsdorff's heuristic
 def next_move(x, y, board):
-  min_probability = 9
+  min_probability = 8
   next_x, next_y = -1, -1
   for i in range(N):
     nx, ny = x + moves_x[i], y + moves_y[i]
     if inside_board(nx, ny) and board[nx][ny] == -1:
       probability = count_moves(nx, ny, board)
-      if probability < min_probability:
+      if probability <= min_probability:
         min_probability = probability
         next_x, next_y = nx, ny
   return next_x, next_y
@@ -42,13 +42,13 @@ def knights_tour(start_x=0, start_y=0):
   board = [[-1 for _ in range(N)] for _ in range(N)]
 
   x, y = start_x, start_y
-  # Mark the initial position as visited (index 1 is filled here!)
+  # Mark the initial position as visited (index 0 is filled here!)
   board[x][y] = 1
   clear_screen()
   print_board(x, y, board)
   time.sleep(0.5)
 
-  # Start in index 2 because index 1 is already filled
+  # Start in index 1 because index 0 is already filled
   for step in range(2, N * N + 1):
     x, y = next_move(x, y, board)
     if x == -1 and y == -1:
