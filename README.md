@@ -9,3 +9,5 @@ Para o trabalho utilizamos a heurística de Warnsdorff.
 Sempre mova o cavalo para a casa que possui o menor número de movimentos futuros possíveis. Ou seja, se o cavalo pode ir para várias casas, ele escolhe a que é mais restrita, no caso, a com menos saídas possíveis depois. Por causa disso é reduzida as chances do cavalo ficar preso antes de visitar todas as casas.
 
 Trabalho realizado por [Daniel Sansão Araldi](https://github.com/DanielAraldi), [Arthur Moser](https://github.com/oArthurMoser) e [Breno Capraro de Souza](https://github.com/BrenoCapraroDeSouza) para a matéria de Inteligência Artificial I.
+
+**Executar** este projeto no [Replit.com](https://replit.com/).
